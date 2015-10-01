@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' data: gap: https://ssl.gstatic.com 'unsafe-eval'; style-src 'self' 'unsafe-inline'; media-src *">
+         <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'">-->
+        <meta name="format-detection" content="telephone=no">
+        <meta name="msapplication-tap-highlight" content="no">
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/js/materialize.min.js"></script>
+        <link rel="stylesheet" href="https://leovaresource8.appspot.com/eframeworks/css/materialize.min.css" />
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Open+Sans|Roboto' rel='stylesheet' type='text/css' />
+        <link rel="stylesheet" type="text/css" href="css/index.css">
+        <title>Demo Project</title>
+    </head>
+    <body>
+        <script type="text/javascript" src="cordova.js"></script>
+        <script type="text/javascript" src="js/index.js"></script>
+
+        <!--- DEMO HTML--->
+
+<div id="mobile" class=" hide-on-large-only hide-on-med-only">
+<div id="page-content" class="hide">
+    <div id="mobile-heading">
+        <div id="mobile-logo-container" class=" valign-wrapper">
+            <img src="./img/leova-logo.png" />
+        </div>
+        <div id="mobile-trip-type-container" class="center-align">
+            <span id="mobile-trip-type">Flights</span>
+        </div>
+    </div>
+
+    <div id="container1" class="mobile-content-container">
+        <br />
+    <div class="container left-align">
+        <div class="row " style="margin:0;">
+            <div class="col s12" style="font-size:1.5rem;">
+                You can try these
+            </div>
+        </div>
+        <div class="divider"></div>
+        <br />
+        <div class="row valign-wrapper speech-bubble" style="margin:15px 0;">
+            <div class="col s12 mobile-tips">
+                &quot;I&#146;m looking for a flight from london to new York in 2 days&quot;
+            </div>
+            <img src="./img/bubble_triangle.png" />
+        </div>
+        <div class="row valign-wrapper speech-bubble" style="margin:15px 0;">
+            <div class="col s12  mobile-tips">
+                &quot;and back on the 9th&quot;
+            </div>
+            <img src="./img/bubble_triangle.png" />
+        </div>
+        <div class="row valign-wrapper speech-bubble" style="margin:15px 0;">
+            <div class="col s12  mobile-tips">
+                &quot;and can you make this for 3 people&quot;
+            </div>
+            <img src="./img/bubble_triangle.png" />
+        </div>
+        <div class="row valign-wrapper speech-bubble" style="margin:5px 0;height:13vh">
+            <div class="col s12  mobile-tips" style="font-size:0.8rem">
+                &quot;i want a flight from barcelona to paris on the 5th and then onto london on the 12th and thn london to san francisco 12 days later and back on the 30th&quot;
+            </div>
+            <img src="./img/bubble_triangle.png" />
+        </div>
+        <div class="row valign-wrapper" style="position:absolute;bottom:15%;">
+            <div class="col s12" style="font-size:1.3rem;">
+                <i>or any other variation...</i>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="container2" class="mobile-content-container hide">
+        <br />
+    <div class="container center-align">    
+        <br />
+            <div class="row mobile-city-row">
+                <div class="col s10 offset-s1">
+                    <div id="mobile-one-way-from" class="mobile-city-div mobile-heading-text">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin:0;">
+                <div class="col s8 offset-s2 ">
+                    <div class="mobile-to-div">
+                        <div class="divider"></div>
+                        <i>&nbsp to &nbsp </i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s10 offset-s1">
+                    <div id="mobile-one-way-to" class="mobile-city-div mobile-heading-text">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div  id="mobile-one-way-date" class="col s12 mobile-travel-date">
+                </div>
+            </div>
+            <div class="row">
+                <div id="mobile-one-way-passenger" class="col s12 mobile-passenger">
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <div id="container3" class="mobile-content-container hide">
+        <br />
+    <div class="container center-align">    
+            <div class="row mobile-city-row">
+                <div class="col s12">
+                    <div id="mobile-two-way-from" class="mobile-city-div mobile-heading-text truncate">
+                    </div>
+                </div>
+            </div>
+            <div class="row" style="margin:0;">
+                <div class="col s8 offset-s2">
+                    <div class="mobile-to-div">
+                        <div class="divider"></div>
+                        <i>&nbsp to &nbsp </i>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col s12">
+                    <div id="mobile-two-way-to" class="mobile-city-div mobile-heading-text truncate">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div id="mobile-two-way-date1" class="col s12 mobile-travel-date">
+                </div>
+                <div id="mobile-two-way-date2" class="col s12 mobile-travel-date">
+                </div>
+            </div>
+            <div class="row">
+                <div id="mobile-two-way-passenger" class="col s12 mobile-passenger">
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <div id="container4" class="mobile-content-container hide ">
+        <br />
+    <div class="container center-align">
+     <ul id="staggered-multi-city-row0">
+        <li class="">          
+            <div id="mobile-multi-city-row0" class="row hide">
+                <div class="col s10 offset-s1 mobile-multi-city-div valign-wrapper">
+                    <div id="mobile-multi-city0" class=" col s7">
+                    </div>
+                    <div id="mobile-multi-city-date0" class="col s5 mobile-multi-city-date">
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+     <ul id="staggered-multi-city-row1">
+        <li class="">          
+            <div id="mobile-multi-city-row1" class="row hide">
+                <div class="col s10 offset-s1 mobile-multi-city-div valign-wrapper">
+                    <div id="mobile-multi-city1" class=" col s7">
+                    </div>
+                    <div id="mobile-multi-city-date1" class="col s5 mobile-multi-city-date">
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+     <ul id="staggered-multi-city-row2">
+        <li class="">          
+            <div id="mobile-multi-city-row2" class="row hide">
+                <div class="col s10 offset-s1 mobile-multi-city-div valign-wrapper">
+                    <div id="mobile-multi-city2" class=" col s7">
+                    </div>
+                    <div id="mobile-multi-city-date2" class="col s5 mobile-multi-city-date">
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+     <ul id="staggered-multi-city-row3">
+        <li class="">          
+            <div id="mobile-multi-city-row3" class="row hide">
+                <div class="col s10 offset-s1 mobile-multi-city-div valign-wrapper">
+                    <div id="mobile-multi-city3" class=" col s7">
+                    </div>
+                    <div id="mobile-multi-city-date3" class="col s5 mobile-multi-city-date">
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+     <ul id="staggered-multi-city-row4">
+        <li class="">          
+            <div id="mobile-multi-city-row4" class="row hide">
+                <div class="col s10 offset-s1 mobile-multi-city-div valign-wrapper">
+                    <div id="mobile-multi-city4" class=" col s7">
+                    </div>
+                    <div id="mobile-multi-city-date4" class="col s5 mobile-multi-city-date">
+                    </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+            <div class="row">
+                <div id="mobile-multi-city-passenger" class="col s12 mobile-passenger hide">
+                </div>
+            </div>
+    </div>
+    </div>
+
+    <div id="container5" class="mobile-content-container hide">
+        <br />
+    <div class="container left-align">
+        <div class="row " style="margin:0;">
+            <div id="error-title" class="col s12" style="font-size:1.5rem;">
+                Error
+            </div>
+        </div>
+        <div class="divider"></div>
+        <div class="row" style="margin:10px 0;">
+            <div id="error-text" class="col s12 mobile-tips ">
+                
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <div id="mobile-mic-holder" onclick="mobile_toggle()">
+        <img id="mobile-mic" src="./img/mic0.png" />
+    </div>
+    </div>
+    <div id="mobile-hotel" class="card-panel center-align hide" onclick="mobile_hotel_card()">
+       <div id="mobile-hotel-heading" class="valign-wrapper">
+           <div class="center-block">
+                <svg id="mobile-left-arrow" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+               <div>See Hotels</div>
+                <svg  id="mobile-right-arrow" fill="#ffffff" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+            </div>  
+        </div>
+    <div id="hotel-content">
+        <div class="row container">
+            <div class="col s12">
+                Hotels in <span id="mobile-hotel-city"></span>
+            </div>
+            <div class="col s12 left-align">
+                Dates
+            </div>
+            <div id="mobile-hotel-date1" class="col s5 mobile-hotel-date">
+            </div>
+            <div class="col s2">
+                to
+            </div>
+            <div id="mobile-hotel-date2" class="col s5 mobile-hotel-date">
+            </div>
+        </div>
+        <div class="row" >
+            <div id="mobile-hotel-passenger" class="col s12 mobile-hotel-passenger">
+            </div>
+        </div>
+    </div>
+    </div>
+    
+    <div id="mobile-user-speech-modal" class="card-panel">
+        <div id="mobile-user-speech" class="container"></div>
+    <br />
+    <div class="row">
+        <div id="mobile-powered-by-container" class="valign-wrapper col s12">
+            Speech-to-Text &nbsp;
+            <img src="./img/powered_by_google_on_white_hdpi.png" />
+        </div>
+    </div>
+        <div id="mobile-user-speech-icon" onclick="close_user_speech()">
+            <!--<i class="material-icons">keyboard_arrow_up</i>-->
+                <svg fill="#000000" height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M7.41 15.41L12 10.83l4.59 4.58L18 14l-6-6-6 6z"/>
+                    <path d="M0 0h24v24H0z" fill="none"/>
+                </svg>
+        </div>
+    </div>
+
+    <div id="mobile-mic-modal" onclick="modal_mic_clicked()">
+        <div id="modal-container" class="card-panel">
+        <img id="modal-mic" src="./img/mic0.png" />
+        <div id="mobile-alert"><b>Click when you're done speaking</b></div>
+        </div>
+    </div>
+
+    <div id="mobile-api-key-modal">
+        <div id="api-key-modal-container" class="card-panel">
+            <div class="row valign-wrapper" style="height:100%;">
+                <div class="col s12">
+                    <input type="text" class="col s12 center-align" id="api_key_box" placeholder="Please enter your API key" />
+                    <input id="api_key_submit_btn" type="submit" class="btn col s10 offset-s1" value="Submit" onclick="api_key_submit()" />
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="splash-screen">
+        <div id="splash-container">
+            <img id="splash-logo" src="./img/leova_travel_logo.png" />
+        </div>
+    </div>
+</div>
+        <div id="landscape" class="row valign-wrapper hide" style="height:100vh;">
+            <div class="col s12 center-align">
+                Not supported for Landscape mode, please revert back to Potrait mode
+            </div>
+        </div>
+    </body>
+</html>

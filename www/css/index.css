@@ -1,0 +1,365 @@
+
+    html, body{
+        height:100%;
+        width:100%;
+        margin:0;
+        padding:0;
+        font-family:'Open Sans';
+    }
+
+
+        #mobile {
+        height:100%;
+        width:100%;
+    }
+
+        #page-content {
+            width:100%;
+            height:100%;
+            overflow:hidden;
+        }
+    #mobile-heading {
+        position:relative;
+        width:100%;
+        height:5rem;
+        background-color:#3683C4;
+    }
+
+    #mobile-logo-container {
+        position:absolute;
+        top:0;
+        left:0;
+        height:100%;
+        width:10rem;
+        padding-left:1rem;
+        overflow:hidden;
+    }
+
+    #mobile-logo-container img {
+        width:80%;
+    }
+
+    #mobile-trip-type-container {
+        position:absolute;
+        top:0;
+        right:0;
+        height:100%;
+        width:10rem;
+        padding-top:1.5rem;
+    }
+
+    #mobile-trip-type {
+        font-size:1.5rem;
+        color:white;
+        font-style:italic;
+    }
+
+    #mobile-mic-holder {
+        position:absolute;
+        bottom:1rem;
+        right:1rem;
+        height:5rem;
+        width:5rem;
+    }
+
+    #mobile-mic-holder img {
+        position:absolute;
+        height:100%;
+    }
+
+    #mobile-mic-modal {
+        height:100%;
+        width:100%;
+        position:absolute;
+        top:0;
+        z-index:-1;
+        background:rgba(0,0,0,0.4);
+    }
+
+    #modal-container {
+        height:70%;
+        width:60%;
+        position:absolute;
+        top:15%;
+        left:20%;
+        overflow:hidden;
+        border-radius:20px;
+    }
+
+    #modal-mic {
+        position:absolute;
+        width:80%;
+        left:10%;
+        animation: 1.5s linear infinite;
+    }
+    @keyframes modal-mic-visibility {
+        0% {opacity:0.5;}
+        50% {opacity:1;}
+        51% {opacity:0.9;}
+        100% {opacity:0.5;}
+
+    }
+    #mobile-alert {
+        position:absolute;
+        font-size:1.5rem;
+        width:80%;
+        height:30%;
+        left:10%;
+        top:60%;
+        text-align:center;
+        color: red;
+        word-break:break-word;
+        animation:mobile-text-flash 1.5s infinite;
+    }
+    @keyframes mobile-text-flash {
+        0% {opacity:0;}
+        50% {opacity:1;}
+        51% {opacity:0.9;}
+        100% {opacity:0;}
+    }
+
+    .mobile-content-container {
+        position:relative;
+        width:100%;
+        height:100%;
+        background-color:white;
+    }
+
+    .mobile-tips {
+        font-size:1rem;
+        font-style:italic;
+    }
+    .speech-bubble {
+        position: relative;
+        height: 11vh;
+        border: 4px solid #3683C4;
+        border-radius: 30px;
+    }
+
+    .speech-bubble img{
+        position: absolute;
+        width: 10%;
+        left: -1.6%;
+        top: 95%;
+    }
+
+    .mobile-city-div {
+        border:1px solid rgba(0,0,0,0.5);
+    }
+
+    .mobile-to-div {
+        height: 5rem;
+        font-size: 1.2rem;
+        position: relative;
+        padding-top: 1.5rem;
+    }
+
+    .mobile-to-div div {
+        width: 40%;
+        position: absolute;
+        top: 2.5rem;
+        left: 30%;
+        background-color: rgba(0,0,0,0.7);
+    }
+
+    .mobile-to-div i{
+        position: absolute;
+        left: 40%;
+        background-color: white;
+        width: 20%;
+    }
+
+    .mobile-city-row {
+        height:2rem;
+    }
+
+    .mobile-heading-text {
+        font-size:1.5rem;
+        height:5rem;
+        padding-top:1.2rem;
+    }
+
+    .mobile-content-text  {
+        font-size:1.2rem;
+    }
+
+    
+    .mobile-passenger {
+        color:rgba(0,0,0,0.7);
+        font-size:1.5rem;
+        font-style:italic;
+    }
+
+    .mobile-hotel-passenger {
+        color:rgba(0,0,0,0.7);
+        font-size:90%;
+        font-style:italic;
+    }
+
+    #mobile-hotel {
+        position:absolute;
+        height:0;
+        top:calc(100% - 4rem);
+        bottom:0;
+        width:15rem;
+        border-top:4rem solid #FC8B41;
+        border-top-left-radius:10px;
+        border-top-right-radius:10px;
+        padding:0;
+        font-size:1.5rem;
+        margin:0;
+        transition:all 0.2s linear;
+    }
+
+   
+    #hotel-content {
+        position:absolute;
+        height:100%;
+        top:0;
+        left:0;
+        width:100%;
+        overflow:hidden;
+    }
+
+    .mobile-travel-date {
+        font-size:1.5rem;
+    }
+
+    #mobile-hotel-heading {
+        position:absolute;
+        padding:0;
+        width:100%;
+        top:-4rem;
+        color:white;
+        font-size:1.5rem;
+        height:4rem;
+    }
+
+    #mobile-hotel-heading .center-block {
+        position:absolute;
+        top:0.8rem;
+    }
+
+
+
+     #mobile-left-arrow {
+        height:22px;
+        width:22px;
+        position:absolute;
+        top:6px;
+        left:0;
+        display:inline-block;
+        transition:transform 0.2s linear;
+    }
+
+     #mobile-right-arrow {
+        height:22px;
+        width:22px;
+        position:absolute;
+        top:6px;
+        right:0;
+        display:inline-block;
+        transition:transform 0.2s linear;
+    }
+
+    #mobile-hotel-heading div{
+        position:absolute;
+        width:80%;
+        left:10%;
+    }
+
+    .mobile-hotel-date {
+        border:1px solid rgba(0,0,0,0.4);
+    }
+
+    #mobile-user-speech-modal{
+        position:absolute;
+        top:-80%;
+        height:60%;
+        width:100%;
+        box-shadow:0 20px 10px rgba(0,0,0,0.5);
+        transition:top 0.5s linear;
+    }
+    
+    #mobile-user-speech {
+        position:absolute;
+        width:90%;
+        font-size:1.7rem;
+        text-align:left;
+        max-height:70%;
+        word-break:break-word;
+        overflow:auto;
+    }
+
+    #mobile-powered-by-container {
+        position:absolute;
+        font-size:15px;
+        bottom:1.5rem;
+    }
+    #mobile-powered-by-container img {
+        height:1.5rem;
+    }
+
+    #mobile-user-speech-icon {
+        position:absolute;
+        bottom:-1rem;
+        left:calc(50% - 1rem);
+        width:2rem;
+        height:2rem;
+        border:1px solid black;
+        background-color:white;
+        text-align:center;
+    }
+
+    .mobile-multi-city-div {
+        font-size:1.5rem;
+        height:3.8rem;
+        border:1px solid rgba(0,0,0,0.5);
+    }
+
+    .mobile-multi-city-date {
+        font-size:1.2rem;
+    }
+
+
+    #mobile-api-key-modal {
+        height:100%;
+        width:100%;
+        position:absolute;
+        top:0;
+        z-index:-1;
+        background:rgba(0,0,0,0.4);
+    }
+
+    #api-key-modal-container {
+        height:12rem;
+        width:90%;
+        position:absolute;
+        top:30%;
+        left:5%;
+        overflow:hidden;
+        border-radius:20px;
+    }
+
+    #splash-screen {
+        height:100%;
+        width:100%;
+        position:absolute;
+        top:0;
+        z-index:-1;
+        background:rgb(255,255,255);
+    }
+
+    #splash-container {
+        position: absolute;
+        height: auto;
+        width: 90%;
+        top: 32%;
+        left: 5%;
+    }
+
+    #splash-logo{
+        width:100%;
+        opacity:0;
+        transition:all 1.5s ease-in;
+    }
